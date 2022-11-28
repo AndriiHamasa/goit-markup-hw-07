@@ -23,6 +23,16 @@
   color: var(--primary-bcg-color);
   background-color: var(--accent-color);
 }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-form-ftr:hover,
+.btn-form-ftr:focus,
+.btn-send-modal:hover,
+.btn-send-modal:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .btn-form-ftr {
   display: inline-flex;
   align-items: center;
