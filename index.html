@@ -13,7 +13,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css ">
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,12 +22,12 @@
   </head>
   <body>
     <header class="pole-header">
-      <div class="container-header container">
-        <nav class="nav-header">
+      <div class="container-header">
+        <nav class="nav">
           <a href="./index.html" class="logo-header"
             >Web<span class="logo-span">Studio</span></a
           >
-          <ul class="list">
+          <ul class="nav__list">
             <li class="header-item">
               <a href="" class="nav-item streaming-page">Студія</a>
             </li>
@@ -40,19 +39,19 @@
             </li>
           </ul>
         </nav>
-        <ul class="list list-cnct-header">
-          <li class="header-item">
-            <a href="mailto:info@devstudio.com" class="contact-item">
-              <svg class="contact-icon" width="10" height="16">
+        <ul class="list contact-header">
+          <li class="contact-header__element">
+            <a href="mailto:info@devstudio.com" class="contact-header__item">
+              <svg class="contact-header__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="header-item">
-            <a href="tel:+380961111111" class="contact-item">
-              <svg class="contact-icon" width="16" height="12">
+          <li class="contact-header__element">
+            <a href="tel:+380961111111" class="contact-header__item">
+              <svg class="contact-header__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,17 +62,17 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="btn-primary" data-modal-open>
             Замовити послугу
           </button>
-        </div>
+        
       </section>
       <section class="strong-page">
         <!--Цей заголовок потім скриємо-->
         <h2 class="visually-hidden">Наші сильні сторони</h2>
-        <div class="container">
+        
           <ul class="strong-container">
             <li class="strong-container__list">
               <div class="strong-list__item">
@@ -126,11 +125,11 @@
               </p>
             </li>
           </ul>
-        </div>
+        
       </section>
 
       <section class="work-page">
-        <div class="container">
+        
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-item">
@@ -172,10 +171,10 @@
               </div>
             </li>
           </ul>
-        </div>
+        
       </section>
       <section class="team">
-        <div class="team-container container">
+        <div class="team-container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="card-worker">
@@ -465,7 +464,7 @@
       </section>
 
       <section class="clients-page">
-        <div class="container">
+        
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients">
             <li>
@@ -504,11 +503,11 @@
                   <use href="./images/sprite.svg#icon-client-sixth"></use></svg></a>
             </li>
           </ul>
-        </div>
+        
       </section>
     </main>
-    <footer class="low-part">
-      <div class="footer-container container">
+    <footer class="basement">
+      <div class="footer-container">
         <div class="adress-footer">
           <a href="./index.html" class="logo-footer"
             >Web<span class="footer-span">Studio</span></a
@@ -517,12 +516,12 @@
             <p class="adres-map">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="adres-list">
               <li class="first-contact">
-                <a href="mailto:info@devstudio.com" class="contact-footer"
+                <a href="mailto:info@devstudio.com" class="basement__contact"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380961111111" class="contact-footer"
+                <a href="tel:+380961111111" class="basement__contact"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -531,7 +530,7 @@
         </div>
 
         <div class="socials-footer">
-          <h2 class="footer-title">приєднуйтесь</h2>
+          <h2 class="basement__title">приєднуйтесь</h2>
           <ul class="socials">
             <li class="socials-item">
               <a href="" class="socials-link-ftr">
@@ -568,11 +567,11 @@
         </div>
         <!--Form footer-->
         <div class="form-footer">
-          <h2 class="text-ftr-form">Підпишіться на розсилку</h2>
-          <form class="footer-form">
+          <h2 class="form-footer__text">Підпишіться на розсилку</h2>
+          <form>
             
             
-            <label class="ftr-label">
+            <label class="form-footer__label">
               <input class="mail-ftr-form" type="email" name="footer-form-mail" placeholder="E-mail">
             </label>
             <button class="btn-form-ftr" type="submit">Підписатися

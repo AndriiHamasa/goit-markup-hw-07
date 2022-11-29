@@ -48,17 +48,18 @@ ul {
 .strong-container,
 .project-list,
 .list,
-.strong-lis,
+.strong-container__list,
 .socials-item,
 .clients,
-.agreement-link {
+.agreement-link,
+.header-item {
   list-style: none;
 }
 
 /*=========
    Reset end
    ===========*/
-.container {
+.portfolio-page, .footer-container, .clients-page, .team-container, .work-page, .strong-container, .container-header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -106,7 +107,7 @@ ul {
           align-items: center;
 }
 
-.nav-header {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,8 +115,7 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
-.list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,17 +123,26 @@ ul {
   margin: 0;
 }
 
-.list-cnct-header {
-  margin-left: auto;
-}
-
 .header-item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/*-----list od contacts-----*/
-.contact-item {
+.contact-header {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.contact-header__item {
+  color: var(--primary-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,13 +153,24 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  color: var(--primary-text-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-icon {
+.contact-header__icon {
   fill: currentColor;
+}
+
+.contact-header__item:hover,
+.contact-header__item:focus {
+  color: var(--accent-color);
+}
+
+.contact-header__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .nav-item {
@@ -180,14 +200,11 @@ ul {
 
 /*----hover and focus for all header----*/
 .nav-item:hover,
-.nav-item:focus,
-.contact-item:hover,
-.contact-item:focus {
+.nav-item:focus {
   color: var(--accent-color);
 }
 
-.nav-item,
-.contact-item {
+.nav-item {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -317,10 +334,11 @@ ul {
           justify-content: space-between;
 }
 
-.strong-list {
+.strong-container__list {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
 }
+
 .strong-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +354,7 @@ ul {
   height: 120px;
   background-color: var(--item-color);
 }
+
 .strong-list__icon {
   fill: var(--primary-title-color);
 }
@@ -588,7 +607,7 @@ ul {
   padding-bottom: 60px;
 }
 
-.low-part {
+.basement {
   background-color: var(--secondary-bcg-color);
 }
 
@@ -601,14 +620,11 @@ ul {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
   color: var(--primary-bcg-color);
 }
 
-.adres-map {
-  margin-bottom: 9px;
-}
-
-.contact-footer {
+.basement__contact {
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -619,18 +635,15 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
+.basement__contact:hover, .basement__contact:focus {
+  color: var(--accent-color);
+}
 
 .first-contact {
   margin-bottom: 9px;
 }
 
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--accent-color);
-}
-
-.footer-title,
-.text-ftr-form {
+.basement__title {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -642,8 +655,15 @@ ul {
 .form-footer {
   margin-left: auto;
 }
-
-.ftr-label {
+.form-footer__text {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.form-footer__label {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -661,9 +681,7 @@ ul {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mail-ftr-form:hover,
-.mail-ftr-form:focus {
+.mail-ftr-form:hover, .mail-ftr-form:focus {
   border-color: var(--accent-color);
 }
 

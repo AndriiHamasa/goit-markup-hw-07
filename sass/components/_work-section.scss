@@ -1,4 +1,5 @@
 .work-page {
+  @extend %container;
     padding-bottom: 94px;
   }
   .work-list {
