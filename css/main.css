@@ -547,7 +547,7 @@ ul {
 /*=========
    Reset end
    ===========*/
-.portfolio-page, .footer-container, .clients-page, .team-container, .work-page, .strong-container, .container-header {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;

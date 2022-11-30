@@ -3,7 +3,6 @@
   border-bottom: 1px solid #ececec;
 }
 .container-header {
-  @extend %container;
   display: flex;
   align-items: center;
 }
